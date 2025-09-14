@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="MywebApp.masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">;
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="divheader" style="background-color:lightpink; color:aqua; text-align:center;font-size:xx-large"> the super company</div>
+            <div id="divmenu" style="background-color:beige; text-align:center">
+                <asp:HyperLink ID="hlhome" runat="server" NavigateUrl="~/Home.aspx" Text="Home" />&nbsp;
+                <asp:HyperLink ID="hlmission" runat="server" NavigateUrl="~/Mission.aspx" Text="Mission" />&nbsp;
+                <asp:HyperLink ID="hlabout" runat="server" NavigateUrl="~/About.aspx" Text="About" />
+            </div>
+            <div id="divcont">
+                <asp:ContentPlaceHolder ID="body" runat="server" />
+            </div>
+            <div id="footer" style="background-color:azure">
+                <fieldset style="border:dotted blue;color:brown">
+                    <legend>Contect Us</legend>
+                    Address : bishrampur vill, neer hurka <br />
+                    Phone : 8220002360<br />
+                    Email : MOHIT@gmail.com<br />
+                    Website : www.mohit.com
+                </fieldset>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
